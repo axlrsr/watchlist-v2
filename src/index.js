@@ -45,7 +45,7 @@ class App extends React.Component {
           </NavLink>
 
           <NavLink to="/list" className="tab__link" activeClassName="tab__link--active">
-            <div className="tab__icon watchlist"></div>
+            <div className="tab__icon list"></div>
             <span className="tab__label">My list</span>
           </NavLink>
         </div>

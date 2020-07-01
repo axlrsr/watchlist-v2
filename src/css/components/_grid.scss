@@ -1,0 +1,13 @@
+.grid {
+    margin: 0 16px;
+    padding-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__poster {
+        width: 32%;
+        margin-bottom: 2%;
+        border-radius: 4px;
+    }
+}
