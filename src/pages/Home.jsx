@@ -40,22 +40,22 @@ class Home extends Component {
         return <div className="content">
             <h2 className="content__title">Popular movies</h2>
             <div className="grid">
-                {this.state.popular.slice(0, 6).map(movie => (<Movie id={movie.id} />))}
+                {this.state.popular.slice(0, 6).map(movie => (<Movie key={movie.id} id={movie.id} />))}
             </div>
 
             <h2 className="content__title">In theatres</h2>
             <div className="grid">
-                {this.state.theatres.slice(0, 6).map(movie => (<Movie id={movie.id} />))}
+                {this.state.theatres.slice(0, 6).map(movie => (<Movie key={movie.id} id={movie.id} />))}
             </div>
 
             <h2 className="content__title">Upcoming movies</h2>
             <div className="grid">
-                {this.state.upcoming.slice(0, 6).map(movie => (<Movie id={movie.id} />))}
+                {this.state.upcoming.slice(0, 6).map(movie => (<Movie key={movie.id} id={movie.id} />))}
             </div>
 
             <h2 className="content__title">Top rated</h2>
             <div className="grid">
-                {this.state.rated.slice(0, 6).map(movie => (<Movie id={movie.id} />))}
+                {this.state.rated.slice(0, 6).map(movie => (<Movie key={movie.id} id={movie.id} />))}
             </div>
         </div>
     }
