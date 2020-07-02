@@ -1,0 +1,81 @@
+.details {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: .5s forwards background;
+
+    &__popup {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $color-bg;
+        border-radius: 32px 32px 0 0;
+        padding: 0 16px 16px 16px;
+        animation: .5s alternate popup;
+    }
+
+    &__center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__close {
+        width: 32px;
+        height: 32px;
+        background-color: $color-main;
+        mask: url(../icons/down.svg);
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: 100%;
+        margin-bottom: 16px;
+        cursor: pointer;
+    }
+
+    &__title {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    &__info {
+        margin: 0;
+        margin-top: 4px;
+        font-size: .8rem;
+        color: $color-gray;
+    }
+
+    &__subtitle {
+        margin: 0;
+        margin-top: 16px;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    &__overview {
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+}
+
+@keyframes popup {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes background {
+    from {
+        background-color: rgba($color: #000, $alpha: 0);
+    }
+
+    to {
+        background-color: rgba($color: #000, $alpha: 0.5);
+    }
+}

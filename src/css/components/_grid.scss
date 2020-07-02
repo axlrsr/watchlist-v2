@@ -7,7 +7,12 @@
 
     &__poster {
         width: 32%;
-        margin-bottom: 2%;
+        margin-bottom: 1%;
+        cursor: pointer;
+    }
+
+    &__img {
+        width: 100%;
         border-radius: 4px;
     }
 }
